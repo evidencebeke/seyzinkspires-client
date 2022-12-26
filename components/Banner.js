@@ -7,6 +7,7 @@ const Banner = () => {
     <div className="bg-black py-28 text-white">
       <div className="flex flex-col md:flex-row items-center container mx-auto">
         <Image
+          alt="Banner inmage"
           className="w-4/5 md:w-1/2 mx-7 object-contain rounded-lg mb-10"
           src={darkBackgroundPic}
         />

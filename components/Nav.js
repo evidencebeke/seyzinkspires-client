@@ -11,7 +11,7 @@ const Nav = () => {
     <nav className="bg-gray-900 text-gray-200 z-40 py-4">
       <div className="container flex items-center mx-auto">
         <div className="flex">
-          <Image width={150} src={logo} />
+          <Image alt="logo" width={150} src={logo} />
         </div>
         <div
           onClick={() => setOpenNav(!openNav)}
