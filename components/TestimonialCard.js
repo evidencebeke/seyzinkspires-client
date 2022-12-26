@@ -11,8 +11,8 @@ const TestimonialCard = () => {
         className="w-24 h-24 rounded-full"
       />
       <p>
-        Time and again, I'll say SEYZ has been amazing. I've had times when I
-        sit down and marvel at the plane of inteligence she speaks from
+        Time and again, I will say SEYZ has been amazing. I have had times when
+        I sit down and marvel at the plane of inteligence she speaks from
         alongside the wisdom she dispenses when it comes to giving practical
         counsel to issues pertaining to relationships and marriage alongside
         personal development. I recommend her to my friends and as many as need
