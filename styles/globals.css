@@ -8,4 +8,7 @@
   .lgScreenNav > li {
     @apply hover:after:w-full after:transition after:duration-1000 after:w-0 flex flex-col after:bg-gradient-to-r after:content-[''] after:from-yellow-600 after:via-yellow-500 after:to-yellow-400 after:h-1 after:mt-1;
   }
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b pl-6 py-2 text-gray-500 placeholder-gray-500 border-[#242424] transition-all focus:border-yellow-500/40 focus:text-yellow-500/40 hover:border-yellow-500/40;
+  }
 }

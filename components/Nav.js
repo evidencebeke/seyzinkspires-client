@@ -23,7 +23,7 @@ const Nav = () => {
             <XMarkIcon className="h-10 " />
           )}
         </div>
-        <ul className="md:flex hidden lgScreenNav font-medium tracking-widest  uppercase space-x-10 ml-auto">
+        <ul className="md:flex items-center hidden lgScreenNav font-medium tracking-widest  uppercase space-x-10 ml-auto">
           <li>
             <Link href="#">Home</Link>{" "}
           </li>
@@ -34,17 +34,18 @@ const Nav = () => {
             <Link href="#">Blog</Link>{" "}
           </li>
           <li>
-            <Link href="#">Our Courses</Link>{" "}
+            <Link href="#">Store</Link>{" "}
           </li>
           <li>
             <Link href="#">Contact</Link>{" "}
           </li>
         </ul>
+
         {/* <ul className="md:hidden object-contain flex absolute flex-col items-center bg-gray-600 w-full h-screen top-20 font-medium tracking-widest  uppercase space-x-10 ml-auto"> */}
         <ul
           className={`md:hidden absolute bg-slate-900/90 bottom-0 top-20 right-0 left-0 duration-500 ${
             openNav ? "left-0" : "left-[-100%]"
-          } navBar  w-full font-medium tracking-widest py-10 h-full space-y-12 uppercase z-30 pl-4`}
+          } navBar w-screen font-medium tracking-widest py-10 space-y-12 uppercase z-30 pl-4`}
         >
           <li>
             <Link href="#">Home</Link>{" "}
@@ -56,7 +57,7 @@ const Nav = () => {
             <Link href="#">Blog</Link>{" "}
           </li>
           <li>
-            <Link href="#">Our Courses</Link>{" "}
+            <Link href="#">Store</Link>{" "}
           </li>
           <li>
             <Link href="#">Contact</Link>{" "}

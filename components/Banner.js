@@ -12,7 +12,7 @@ const Banner = () => {
           src={darkBackgroundPic}
         />
         <div className="xl:mr-28 ml-10">
-          <div>
+          <div className="text-lg">
             <span>Lorem iPsum | &nbsp;</span>
             <span>Lorem iPsu | &nbsp;</span>
             <span>Lorem iPsum</span>
@@ -21,7 +21,7 @@ const Banner = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
             aperiam!
           </h1>
-          <p className="text-sm leading-loose mr-5 mt-8">
+          <p className="text-lg leading-loose mr-5 mt-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
             corporis doloremque quod accusamus nobis repellendus quaerat? Minus
             repellat esse, inventore similique, reiciendis mollitia iusto
