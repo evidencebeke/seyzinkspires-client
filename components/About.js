@@ -16,7 +16,7 @@ const About = () => {
           <h1 className="text-center md:text-4xl mb-10 text-2xl text-yellow-500">
             My Kingdom Expressions
           </h1>
-          <div className="mx-10 grid grid-cols-1 gap-10 md:grid-cols-3">
+          <div className="mx-5 grid grid-cols-1 gap-10 md:grid-cols-3">
             <KingdomExpression
               icon={<FaPeopleArrows className="text-yellow-700 text-5xl" />}
             />

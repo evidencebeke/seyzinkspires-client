@@ -45,7 +45,7 @@ const Nav = () => {
         <ul
           className={`md:hidden absolute bg-slate-900/90 bottom-0 top-20 right-0 left-0 duration-500 ${
             openNav ? "left-0" : "left-[-100%]"
-          } navBar w-screen font-medium tracking-widest py-10 space-y-12 uppercase z-30 pl-4`}
+          } navBar w-screen font-medium tracking-widest py-10 space-y-12 overflow-y-auto uppercase z-30 pl-4`}
         >
           <li>
             <Link href="#">Home</Link>{" "}
