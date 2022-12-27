@@ -8,7 +8,7 @@ const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-gray-200 z-40 py-4">
+    <nav className="bg-gray-900 md:fixed text-gray-200 z-40 py-4">
       <div className="container flex items-center mx-auto">
         <div className="flex">
           <Image alt="logo" width={150} src={logo} />
@@ -45,7 +45,7 @@ const Nav = () => {
         <ul
           className={`md:hidden absolute bg-slate-900/90 bottom-0 top-20 right-0 left-0 duration-500 ${
             openNav ? "left-0" : "left-[-100%]"
-          } navBar w-screen font-medium tracking-widest py-10 space-y-12 overflow-y-auto uppercase z-30 pl-4`}
+          } navBar w-full font-medium tracking-widest py-10 space-y-12 overflow-y-auto uppercase z-30 pl-4`}
         >
           <li>
             <Link href="#">Home</Link>{" "}
