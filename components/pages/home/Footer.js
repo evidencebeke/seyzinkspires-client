@@ -39,8 +39,10 @@ const Footer = () => {
   //     );
   // };
   return (
-    <div className="bg-black py-2 text-white">
-      <div className=" container mx-auto">Lorem Ipsum</div>
+    <div className="bg-black py-8 text-center text-white">
+      <div className=" container mx-auto">
+        ©{new Date().getFullYear()} LoremIpsum.com | All Rights Reserved.
+      </div>
     </div>
   );
 };

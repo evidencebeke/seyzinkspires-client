@@ -2,13 +2,13 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import logo from "../../assets/logo1.png";
+import logo from "../../assets/logo2.jpg";
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <nav className="bg-gray-900 fixed w-full text-gray-200 z-40 py-4">
+    <nav className="bg-gray-900 fixed w-full text-gray-200 z-40 py-6">
       <div className="container flex items-center mx-auto">
         <div className="flex">
           <Link href={"/"}>
