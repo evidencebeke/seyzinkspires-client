@@ -2,16 +2,19 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import logo from "../assets/logo1.png";
+import logo from "../../assets/logo1.png";
 
 const Nav = () => {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <nav className="bg-gray-900 md:fixed text-gray-200 z-40 py-4">
+    <nav className="bg-gray-900 fixed w-full text-gray-200 z-40 py-4">
       <div className="container flex items-center mx-auto">
         <div className="flex">
-          <Image alt="logo" width={150} src={logo} />
+          <Link href={"/"}>
+            {" "}
+            <Image alt="logo" width={150} src={logo} />
+          </Link>
         </div>
         <div
           onClick={() => setOpenNav(!openNav)}
@@ -25,19 +28,19 @@ const Nav = () => {
         </div>
         <ul className="md:flex items-center hidden lgScreenNav font-medium tracking-widest  uppercase space-x-10 ml-auto">
           <li>
-            <Link href="#">Home</Link>{" "}
+            <Link href="/">Home</Link>{" "}
           </li>
           <li>
-            <Link href="#">About</Link>{" "}
+            <Link href="/about">About</Link>{" "}
           </li>
           <li>
-            <Link href="#">Blog</Link>{" "}
+            <Link href="/blog">Blog</Link>{" "}
           </li>
           <li>
-            <Link href="#">Store</Link>{" "}
+            <Link href="/store">Store</Link>{" "}
           </li>
           <li>
-            <Link href="#">Contact</Link>{" "}
+            <Link href="/contact">Contact</Link>{" "}
           </li>
         </ul>
 
@@ -45,22 +48,22 @@ const Nav = () => {
         <ul
           className={`md:hidden absolute bg-slate-900/90 bottom-0 top-20 right-0 left-0 duration-500 ${
             openNav ? "left-0" : "left-[-100%]"
-          } navBar w-full font-medium tracking-widest py-10 space-y-12 overflow-y-auto uppercase z-30 pl-4`}
+          } navBar h-screen w-full font-medium tracking-widest py-10 space-y-12 overflow-y-auto uppercase z-30 pl-4`}
         >
           <li>
-            <Link href="#">Home</Link>{" "}
+            <Link href="/">Home</Link>{" "}
           </li>
           <li>
-            <Link href="#">About</Link>{" "}
+            <Link href="about">About</Link>{" "}
           </li>
           <li>
-            <Link href="#">Blog</Link>{" "}
+            <Link href="blog">Blog</Link>{" "}
           </li>
           <li>
-            <Link href="#">Store</Link>{" "}
+            <Link href="store">Store</Link>{" "}
           </li>
           <li>
-            <Link href="#">Contact</Link>{" "}
+            <Link href="/contact">Contact</Link>{" "}
           </li>
         </ul>
       </div>

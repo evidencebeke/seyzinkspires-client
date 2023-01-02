@@ -10,7 +10,7 @@ import KingdomExpression from "./KingdomExpression";
 
 const About = () => {
   return (
-    <div className="bg-gray-800 py-20 text-white">
+    <div className=" py-20 text-gray-700">
       <div className="container mx-auto">
         <div className="flex flex-col justify-center text-white">
           <h1 className="text-center md:text-4xl mb-10 text-2xl text-yellow-500">

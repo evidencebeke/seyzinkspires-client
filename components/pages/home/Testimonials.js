@@ -4,7 +4,7 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
   return (
-    <div className="bg-black text-white">
+    <div className=" text-gray-700">
       <div className=" container py-8 mx-auto">
         <h1 className="text-center md:text-4xl mb-10 text-2xl text-yellow-500">
           What People Say

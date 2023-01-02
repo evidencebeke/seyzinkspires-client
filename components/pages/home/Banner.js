@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import darkBackgroundPic from "../assets/dark.jpg";
+import darkBackgroundPic from "../../../assets/dark.jpg";
 
 const Banner = () => {
   return (
-    <div className="bg-black py-28 text-white">
+    <div className="py-28 text-gray-700 bg-cover bg-[url(https://images.unsplash.com/photo-1520671486401-ba5f2ab2213c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)]">
       <div className="flex flex-col md:flex-row items-center container mx-auto">
         <Image
           alt="Banner inmage"

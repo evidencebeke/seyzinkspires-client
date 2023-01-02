@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import picture from "../assets/builder.jpg";
+import picture from "../../../assets/builder.jpg";
 
 const TestimonialCard = () => {
   return (
@@ -10,7 +10,7 @@ const TestimonialCard = () => {
         src={picture}
         className="w-24 h-24 rounded-full"
       />
-      <p>
+      <p className="text-gray-300">
         Time and again, I will say SEYZ has been amazing. I have had times when
         I sit down and marvel at the plane of inteligence she speaks from
         alongside the wisdom she dispenses when it comes to giving practical
