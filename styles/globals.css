@@ -1,14 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
+
+.slick-slide > div {
+  margin: 0 5px;
+}
+.slick-slide > div:nth-child(1) {
+  margin-left: 0;
+}
+.slick-list {
+  margin-right: -30px;
+}
+body {
+  overflow-x: hidden;
+}
+/* @layer components {
   .navBar > li {
     @apply border-b-2 mr-5;
   }
-  .lgScreenNav > li {
-    @apply hover:after:w-full after:transition after:duration-1000 after:w-0 flex flex-col after:bg-gradient-to-r after:content-[''] after:from-yellow-600 after:via-yellow-500 after:to-yellow-400 after:h-1 after:mt-1;
+
+  .lgScreenNav > li>a {
+    @apply hover:text-yellow-600
   }
   .contactInput {
-    @apply outline-none bg-slate-400/10 rounded-sm border-b pl-6 py-2 text-gray-500 placeholder-gray-500 border-[#242424] transition-all focus:border-yellow-500/40 focus:text-yellow-500/40 hover:border-yellow-500/40;
+    @apply outline-none mx-auto bg-slate-400/10 rounded-sm border-b pl-6 py-2 text-gray-500 placeholder-gray-500 border-[#242424] transition-all focus:border-yellow-500/40 focus:text-yellow-500/40 hover:border-yellow-500/40;
   }
-}
+  .focused{
+    @apply text-yellow-500
+  }
+} */
