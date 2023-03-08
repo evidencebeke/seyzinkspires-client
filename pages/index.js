@@ -2,10 +2,13 @@ import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import About from "../components/home/About";
 import Books from "../components/home/Books";
-import Expressions from "../components/home/Expressions";
+
 import Header from "../components/home/Header";
+import KingdomExpressions from "../components/home/KingdomExpressions";
 import Quote from "../components/home/Quote";
+import Testimonials from "../components/home/Testimonials";
 
 export default function Home() {
   console.log(process.env.NEXT_PUBLIC_API_URL);
@@ -30,8 +33,10 @@ export default function Home() {
       </Head>
       <Header />
       <Quote />
-      <Expressions />
+      <About />
+      <KingdomExpressions />
       <Books />
+      <Testimonials />
     </>
   );
 }

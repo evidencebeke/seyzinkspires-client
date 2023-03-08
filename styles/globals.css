@@ -15,6 +15,13 @@
 body {
   overflow-x: hidden;
 }
+@layer components {
+  input,
+  textarea {
+    @apply w-full resize-none bg-transparent outline-none border-b-2  p-2 rounded-md border-white;
+  }
+}
+
 /* @layer components {
   .navBar > li {
     @apply border-b-2 mr-5;

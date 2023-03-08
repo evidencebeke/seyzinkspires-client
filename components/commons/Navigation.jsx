@@ -58,7 +58,7 @@ const Navigation = () => {
     //     </div>
     //   </div>
     // </nav>
-    <nav className="bg-lightgray ">
+    <nav className="bg-slate-900 ">
       <div className="flex items-center p-2 font-medium justify-between container mx-auto">
         <div className=" p-5 md:w-auto w-full flex justify-between">
           <Image
@@ -86,6 +86,11 @@ const Navigation = () => {
           <li>
             <Link className="py-7 px-3 inline-block" href="/">
               Store
+            </Link>{" "}
+          </li>
+          <li>
+            <Link className="py-7 px-3 inline-block" href="/">
+              Testimonials
             </Link>{" "}
           </li>
           <li>
@@ -127,6 +132,12 @@ const Navigation = () => {
               Store
             </Link>{" "}
           </li>
+          <li>
+            <Link className="py-7 px-3 inline-block" href="/">
+              Testimonials
+            </Link>{" "}
+          </li>
+
           <li>
             <Link className="py-7 px-3 inline-block" href="/">
               Blog

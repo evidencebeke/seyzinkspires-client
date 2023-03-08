@@ -9,10 +9,10 @@ const list = [
 ];
 const Header = () => {
   return (
-    <section className=" py-6  min-h-screen">
-      <div className="container  p-6 mx-auto flex-col lg:flex-row justify-center  flex  items-center ">
-        <div className=" space-y-6 text-center md:text-left ">
-          <h1 className="text-lightgray text-2xl md:text-6xl font-bold tracking-wider leading-snug">
+    <section className=" py-6 bg-[url(/assets/bg.jpg)] bg-cover min-h-screen">
+      <div className="container  p-6 mx-auto flex-col px-10 md:flex-row justify-center  flex  items-center ">
+        <div className=" space-y-6  md:w-1/2 text-center md:text-left ">
+          <h1 className="text-lightgray text-3xl md:text-5xl font-bold tracking-wider leading-snug">
             <span className="text-primary">Learn</span> How to Build and Attract
             a Healthy Relationship
           </h1>
@@ -24,14 +24,8 @@ const Header = () => {
           </p>
           <PrimaryButton>Get in touch</PrimaryButton>
         </div>
-        <div>
-          <Image
-            className="h-[300px]"
-            src={hero}
-            width={775}
-            height={787}
-            alt="Hero img"
-          />
+        <div className="md:w-1/2 flex my-10 justify-center ">
+          <Image className="w-full object-cover" src={hero} alt="Hero img" />
         </div>
       </div>
       <div className="container mx-auto">
