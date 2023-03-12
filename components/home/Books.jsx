@@ -3,7 +3,7 @@ import MySlider from "../commons/ui/Slider";
 
 const Books = () => {
   return (
-    <section className="px-2 my-10">
+    <section id="store" className="px-2 my-10">
       <div className="container  mx-auto">
         <div>
           <h1 className="font-bold text-2xl md:text-4xl capitalize">

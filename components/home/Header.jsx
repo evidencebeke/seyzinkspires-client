@@ -9,7 +9,7 @@ const list = [
 ];
 const Header = () => {
   return (
-    <section className=" py-6 bg-[url(/assets/bg.jpg)] bg-cover min-h-screen">
+    <section className=" py-6 min-h-screen">
       <div className="container  p-6 mx-auto flex-col px-10 md:flex-row justify-center  flex  items-center ">
         <div className=" space-y-6  md:w-1/2 text-center md:text-left ">
           <h1 className="text-lightgray text-3xl md:text-5xl font-bold tracking-wider leading-snug">
@@ -30,8 +30,11 @@ const Header = () => {
       </div>
       <div className="container mx-auto">
         <div className="flex items-center flex-col md:flex-row py-7 border-none w-10/12 rounded-2xl shadow-2xl   mx-auto md:justify-around justify-center space-x-5 ">
-          {list.map((item) => (
-            <div className="flex space-y-4 flex-col justify-center items-center">
+          {list.map((item, i) => (
+            <div
+              key={i}
+              className="flex space-y-4 flex-col justify-center items-center"
+            >
               <p className="text-4xl text-primary text-center font-semibold">
                 {item.value}
               </p>

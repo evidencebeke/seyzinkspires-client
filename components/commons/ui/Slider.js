@@ -125,8 +125,9 @@ const MySlider = () => {
   return (
     <div className="relative my-24 w-full">
       <Slider {...settings}>
-        {data.map((book) => (
+        {data.map((book, i) => (
           <Card
+            key={i}
             title={book.title}
             description={book.description}
             price={book.price}

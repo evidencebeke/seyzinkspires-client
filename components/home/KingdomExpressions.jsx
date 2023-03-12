@@ -68,8 +68,9 @@ const KingdomExpressions = () => {
           commitments.
         </p>
         <div className=" grid grid-cols-1 gap-10 my-5 md:grid-cols-3">
-          {kingdomExpressions.map((expression) => (
+          {kingdomExpressions.map((expression, i) => (
             <KingdomExpression
+              key={i}
               topic={expression.topic}
               body={expression.body}
               icon={expression.icon}

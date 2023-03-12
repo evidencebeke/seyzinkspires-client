@@ -23,14 +23,15 @@ const testimonialData = [
 ];
 const Testimonials = () => {
   return (
-    <div className=" text-gray-700 px-2 ">
+    <div id="testimonials" className=" text-gray-700 px-2 ">
       <div className=" container py-8 mx-auto">
         <h1 className="font-bold md:text-4xl mb-10 text-2xl">
           What <span className="text-primary"> People</span> Say
         </h1>
         <div className="w-full flex space-x-5 overflow-x-scroll  scrollbar-thin scrollbar-track-gray-400/10  scrollbar-thumb-yellow-600/40 p-10 snap-x snap-mandatory ">
-          {testimonialData.map((item) => (
+          {testimonialData.map((item, i) => (
             <TestimonialCard
+              key={i}
               image={item.image}
               name={item.name}
               text={item.text}

@@ -3,7 +3,9 @@ import Link from "next/link";
 import React, { useState } from "react";
 import logo from "../../assets/logo2.png";
 import PrimaryButton from "./ui/PrimaryButton";
-import { Bars3BottomLeftIcon, XMarkIcon } from "@heroicons/react/24/outline";
+
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
 const Navigation = () => {
   const [open, setOpen] = useState(false);
   const handleOpenNav = () => setOpen(true);
@@ -60,46 +62,49 @@ const Navigation = () => {
     // </nav>
     <nav className="bg-slate-900 ">
       <div className="flex items-center p-2 font-medium justify-between container mx-auto">
-        <div className=" p-5 md:w-auto w-full flex justify-between">
-          <Image
-            className="  md:cursor-pointer"
-            height={120}
-            width={150}
-            src={logo}
-            alt="logo"
-          />
+        <div className=" p-5 md:w-auto w-full flex items-center justify-between">
+          <Link href="/">
+            {" "}
+            <Image
+              className="  md:cursor-pointer"
+              height={120}
+              width={150}
+              src={logo}
+              alt="logo"
+            />
+          </Link>
           <div className="text-xl md:hidden" onClick={handleOpenNav}>
-            <span className="text-white">Open</span>
+            <RxHamburgerMenu className="text-white my-auto" />
           </div>
         </div>
-        <ul className=" uppercase md:flex hidden items-center text-zinc-50 gap-8">
+        <ul className=" uppercase md:flex hidden items-center text-zinc-50 lg:gap-8">
           <li>
             <Link className="py-7 px-3 inline-block" href="/">
               Home
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="#about">
               About
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="#store">
               Store
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="#testimonials">
               Testimonials
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="/blog">
               Blog
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="#contact">
               Contact
             </Link>{" "}
           </li>
@@ -115,7 +120,7 @@ const Navigation = () => {
           `}
         >
           <li className="self-end px-5" onClick={handleCloseNav}>
-            <span>close</span>
+            <AiOutlineClose />
           </li>
           <li>
             <Link className="py-7 px-3 inline-block" href="/">
@@ -123,28 +128,28 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="#about">
               About
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="#store">
               Store
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="#testimonials">
               Testimonials
             </Link>{" "}
           </li>
 
           <li>
-            <Link className="py-7 px-3 inline-block" href="/">
+            <Link className="py-7 px-3 inline-block" href="/blog">
               Blog
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7  px-3 inline-block" href="/">
+            <Link className="py-7  px-3 inline-block" href="#contact">
               Contact
             </Link>{" "}
           </li>

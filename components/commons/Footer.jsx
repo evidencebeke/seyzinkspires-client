@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
+import PrimaryButton from "./ui/PrimaryButton";
 
 const Footer = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+
+  const submitForm = (e) => {
+    e.preventDefault();
+    console.log({ name, email, subject, message });
+  };
   return (
-    <footer className="bg-slate-900 py-10 text-zinc-200 ">
+    <footer id="contact" className="bg-slate-900 py-10 text-zinc-200 ">
       <div className="container px-5 p-10 grid grid-cols-1 gap-10 md:grid-cols-2 mx-auto">
         <div>
           <h1 className="text-2xl md:text-4xl font-bold tracking-wide leading-normal">
@@ -19,26 +29,48 @@ const Footer = () => {
             <label className="block" htmlFor="name">
               Name
             </label>
-            <input type="text" id="name" />
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              id="name"
+            />
           </div>
           <div>
             <label className="block" htmlFor="email">
               Email
             </label>
-            <input type="email" id="email" />
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              id="email"
+            />
           </div>
           <div>
             <label className="block" htmlFor="subject">
               Subject
             </label>
-            <input type="text" id="name" />
+            <input
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              type="text"
+              id="subject"
+            />
           </div>
           <div>
             <label className="block" htmlFor="text">
               Message
             </label>
-            <textarea id="text" cols="30" rows="2"></textarea>
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              id="text"
+              cols="30"
+              rows="2"
+            ></textarea>
           </div>
+          <PrimaryButton onClick={submitForm}>Submit</PrimaryButton>
         </form>
       </div>
       <div className="flex space-x-4 justify-center">
@@ -64,7 +96,10 @@ const Footer = () => {
         />
       </div>
       <div className=" text-center md:text-left container my-5 mx-auto px-5">
-        <p>Copyright &copy; 2021 All Rights Reserved by DamiSeyz</p>
+        <p>
+          Copyright &copy; {new Date().getFullYear()} All Rights Reserved by
+          DamiSeyz
+        </p>
       </div>
     </footer>
   );

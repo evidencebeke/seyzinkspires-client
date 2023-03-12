@@ -4,7 +4,7 @@ import React from "react";
 import picture from "../../assets/seyz2.jpg";
 const About = () => {
   return (
-    <div>
+    <div id="about">
       <div className="container justify-around px-2 items-center flex flex-col md:flex-row mx-auto">
         <div>
           <Image
@@ -38,7 +38,7 @@ const About = () => {
               , private counselling sessions, invites, speaking engagements and
               writings.
             </p>
-            <Link className="text-secondary" href="/">
+            <Link className="text-secondary" href="/about">
               Read More...
             </Link>
           </div>

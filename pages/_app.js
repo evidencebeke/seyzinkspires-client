@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Navigation />
-      <div className="relative  h-full">
+      <div>
         <Component {...pageProps} /> <Footer />
       </div>
     </div>
