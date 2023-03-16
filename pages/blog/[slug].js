@@ -4,15 +4,21 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import { getPost, getPosts } from "../../apiFunctions/blog";
-import { format, compareAsc, formatDistance } from "date-fns";
+import { formatDistance } from "date-fns";
+import { useRouter } from "next/router";
 
-const index = (post) => {
-  let article = post.post.attributes;
+const Article = ({ post, otherPosts }) => {
+  console.log(post, otherPosts);
+  const router = useRouter();
+  let article = post.attributes;
 
   let timePublished = new Date(article.publishedAt);
   let publishedSince = formatDistance(timePublished, new Date(), {
     addSuffix: true,
   });
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
@@ -25,10 +31,6 @@ const index = (post) => {
           <h1 className="text-2xl md:4xl mx-5 md:mx-[20%] font-bold mb-5">
             {article.Title}
           </h1>
-          {/* <p className="text-lg">
-            Why GhostieD (and Figma) instgead of Medium, WordPress or other
-            options
-          </p> */}
         </div>
         <div className="bg-primary h-80">
           <Image
@@ -89,6 +91,8 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const { slug } = params;
   let post = await getPost(slug);
+  let data = await getPosts();
+
   if (!post) {
     return {
       notFound: true,
@@ -98,9 +102,10 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       post: post ? post : null,
+      otherPosts: data.filter((article) => article.id !== post.id),
     },
     revalidate: 10,
   };
 }
 
-export default index;
+export default Article;
