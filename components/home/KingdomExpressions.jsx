@@ -8,12 +8,12 @@ const kingdomExpressions = [
       <p className="px-5 text-justify text-gray">
         I am a Certified Counselor & Relationship Minister, who has been sent to
         the heartbroken and individuals wih a shattered past to bring healing
-        and a revival of God's presence and true love in relationships today. My
-        mandate is to help people (singles and teenagers especially) break free
-        from toxic relationships, heal from past traumas, become whole, and
-        experience true (God-kind) love that can be expressed to others. <br />{" "}
-        Tired of repeated heartbreaks and unhealthy relationships? <br /> Hit me
-        up for a private session
+        and a revival of the presence of God and true love in relationships
+        today. My mandate is to help people (singles and teenagers especially)
+        break free from toxic relationships, heal from past traumas, become
+        whole, and experience true (God-kind) love that can be expressed to
+        others. <br /> Tired of repeated heartbreaks and unhealthy
+        relationships? <br /> Hit me up for a private session
       </p>
     ),
     icon: <FaPeopleArrows className="text-primary text-5xl" />,
@@ -23,7 +23,7 @@ const kingdomExpressions = [
     body: (
       <p className="px-5 text-justify text-gray">
         As a phenomenal writer with over 3 years of experience, I weave words in
-        the most beautiful ways you can imagine. I've been privileged to write
+        the most beautiful ways you can imagine. I have been privileged to write
         for brands and companies, to increase sales, tell their brand story, or
         simply educate their audience. I am the Founder, SeyzINKspire, a growing
         firm with the passion and responsibility to raise exceptional writers

@@ -1,7 +1,8 @@
 import React from "react";
 import BlogPostcard from "./BlogPostcard";
 
-const Blog = () => {
+const Blog = ({ posts }) => {
+  console.log(posts);
   return (
     <div className="w-full">
       <div className="w-full bg-gray-800 bg-blend-darken bg-[url(https://img.freepik.com/premium-photo/flat-lay-background-flower-pattern-valentine-s-day-theme-lovers-red-roses-gifts-with-ribbons-white-background-isolated_182816-912.jpg?w=740)]">
@@ -10,11 +11,9 @@ const Blog = () => {
         </div>
       </div>
       <div className="container my-10 grid grid-cols-1 md:grid-cols-3 gap-5 mx-auto">
-        <BlogPostcard />
-        <BlogPostcard />
-        <BlogPostcard />
-        <BlogPostcard />
-        <BlogPostcard />
+        {posts.map((post, i) => (
+          <BlogPostcard key={i} post={post} />
+        ))}
       </div>
     </div>
   );

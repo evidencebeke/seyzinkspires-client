@@ -9,7 +9,7 @@ const list = [
 ];
 const Header = () => {
   return (
-    <section className=" py-6 min-h-screen">
+    <section className=" py-6 bg-[url(https://images.unsplash.com/photo-1520671486401-ba5f2ab2213c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)] min-h-screen">
       <div className="container  p-6 mx-auto flex-col px-10 md:flex-row justify-center  flex  items-center ">
         <div className=" space-y-6  md:w-1/2 text-center md:text-left ">
           <h1 className="text-lightgray text-3xl md:text-5xl font-bold tracking-wider leading-snug">

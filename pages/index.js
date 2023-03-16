@@ -2,6 +2,7 @@ import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import { getBooks } from "../apiFunctions/books";
 import About from "../components/home/About";
 import Books from "../components/home/Books";
 
@@ -10,8 +11,7 @@ import KingdomExpressions from "../components/home/KingdomExpressions";
 import Quote from "../components/home/Quote";
 import Testimonials from "../components/home/Testimonials";
 
-export default function Home() {
-  console.log(process.env.NEXT_PUBLIC_API_URL);
+export default function Home({ books }) {
   return (
     <>
       <Head>
@@ -35,8 +35,17 @@ export default function Home() {
       <Quote />
       <About />
       <KingdomExpressions />
-      <Books />
+      <Books books={books} />
       <Testimonials />
     </>
   );
+}
+export async function getStaticProps() {
+  const data = await getBooks();
+  return {
+    props: {
+      books: data ? data : [],
+    },
+    revalidate: 5,
+  };
 }

@@ -4,7 +4,9 @@ import Card from "./Card";
 import NextArrow from "./NextArrow";
 import PrevArrow from "./PrevArrow";
 
-const MySlider = () => {
+const MySlider = ({ books }) => {
+  const data = books;
+  console.log(data);
   const [progress, setProgress] = useState(0);
   const [slidesToShow, setSlideToShow] = useState(4);
   const setSlides = () => {
@@ -23,78 +25,7 @@ const MySlider = () => {
       setSlides;
     });
   }, []);
-  const data = [
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-    {
-      title: "Book title",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sintperspiciatis magni doloremque? Minus pariatur maiores sapientefacilis officiis suscipit excepturi.",
-      imageUrl: "/assets/book-cover.jpg",
-      price: "1,000",
-    },
-  ];
+
   const settings = {
     arrows: true,
     infinite: false,
@@ -128,10 +59,10 @@ const MySlider = () => {
         {data.map((book, i) => (
           <Card
             key={i}
-            title={book.title}
-            description={book.description}
-            price={book.price}
-            imageUrl={book.imageUrl}
+            // title={book.Title}
+            // price={book.Price}
+            // imageUrl={book.Picture.data.attributes.formats.medium.url}
+            book={book.attributes}
           />
         ))}
       </Slider>

@@ -1,10 +1,11 @@
 import Head from "next/head";
 import React from "react";
+import { getPosts } from "../apiFunctions/blog";
 import Blog from "../components/blog/Blog";
 
 // import Seo from "../components/commons/Seo";
 
-const BlogPage = () => {
+const BlogPage = ({ posts }) => {
   return (
     <>
       <Head>
@@ -16,10 +17,20 @@ const BlogPage = () => {
       </Head>
 
       <div>
-        <Blog />
+        <Blog posts={posts} />
       </div>
     </>
   );
 };
 
 export default BlogPage;
+
+export async function getStaticProps() {
+  const data = await getPosts();
+  return {
+    props: {
+      posts: data ? data : [],
+    },
+    revalidate: 5,
+  };
+}
