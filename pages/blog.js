@@ -6,6 +6,7 @@ import Blog from "../components/blog/Blog";
 // import Seo from "../components/commons/Seo";
 
 const BlogPage = ({ posts }) => {
+  console.log(posts);
   return (
     <>
       <Head>

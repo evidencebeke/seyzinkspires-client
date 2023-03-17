@@ -3,28 +3,34 @@ import Markdown from "markdown-to-jsx";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import { getPost, getPosts } from "../../apiFunctions/blog";
+import { getPost, getPosts } from "../../../apiFunctions/blog";
 import { formatDistance } from "date-fns";
 import { useRouter } from "next/router";
 
 const Article = ({ post, otherPosts }) => {
-  console.log(post, otherPosts);
   const router = useRouter();
+  if (router?.isFallback) {
+    return <div>Loading...</div>;
+  }
+  console.log(post, otherPosts);
+
   let article = post.attributes;
 
   let timePublished = new Date(article.publishedAt);
   let publishedSince = formatDistance(timePublished, new Date(), {
     addSuffix: true,
   });
-  if (router.isFallback) {
-    return <div>Loading...</div>;
-  }
 
   return (
     <>
       <Head>
-        <title>Blog article</title>
-        <meta name="description" content="Blog Article description" />
+        {/* <title>Blog details</title> */}
+        <title>{article ? article.Title : ""}</title>
+        {/* <meta name="description" content="hello" /> */}
+        <meta
+          name="description"
+          content={`${article.Title ? article.Title : ""}`}
+        />
       </Head>
       <div className="space-y-10 my-10">
         <div className="text-center">
@@ -54,7 +60,7 @@ const Article = ({ post, otherPosts }) => {
           </div>
           <div>
             <h6 className="capitalize">Damilola Seyz Adeniji</h6>
-            <p> {publishedSince} </p>
+            <p>Posted {publishedSince} </p>
           </div>
         </div>
         <div className="mx-5 md:mx-[20%] text-justify text-lg leading-relaxed tracking-wide">

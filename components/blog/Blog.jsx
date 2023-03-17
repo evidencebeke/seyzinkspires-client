@@ -2,7 +2,6 @@ import React from "react";
 import BlogPostcard from "./BlogPostcard";
 
 const Blog = ({ posts }) => {
-  console.log(posts);
   return (
     <div className="w-full">
       <div className="w-full bg-gray-800 bg-blend-darken bg-[url(https://img.freepik.com/premium-photo/flat-lay-background-flower-pattern-valentine-s-day-theme-lovers-red-roses-gifts-with-ribbons-white-background-isolated_182816-912.jpg?w=740)]">
