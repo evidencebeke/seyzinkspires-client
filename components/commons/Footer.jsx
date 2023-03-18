@@ -89,6 +89,12 @@ const Footer = () => {
           bgColor="#ffb84d"
           url="https://ng.linkedin.com/in/damilola-adeniji"
         />
+
+<SocialIcon
+          fgColor="white"
+          bgColor="#ffb84d"
+          url="https://www.instagram.com/seyz_inkspires/"
+        />
       </div>
       <div className=" text-center md:text-left container my-5 mx-auto px-5">
         <p>
