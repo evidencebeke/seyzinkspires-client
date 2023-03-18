@@ -84,14 +84,14 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/#about">
+            <Link className="py-7 px-3 inline-block" href="/about">
               About
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="#store">
+            <a className="py-7 px-3 inline-block" href="https://selar.co/m/damilolaadeniji">
               Store
-            </Link>{" "}
+            </a>{" "}
           </li>
           <li>
             <Link className="py-7 px-3 inline-block" href="#testimonials">
@@ -130,14 +130,14 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="/#about">
+            <Link className="py-7 px-3 inline-block" href="/about">
               About
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="#store">
+            <a className="py-7 px-3 inline-block" href="https://selar.co/m/damilolaadeniji">
               Store
-            </Link>{" "}
+            </a>{" "}
           </li>
           <li>
             <Link className="py-7 px-3 inline-block" href="#testimonials">
