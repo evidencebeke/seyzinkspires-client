@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPeopleArrows, FaPenAlt } from "react-icons/fa";
+import { FaPeopleArrows, FaMicrophone, FaPenAlt } from "react-icons/fa";
 import KingdomExpression from "./KingdomExpression";
 const kingdomExpressions = [
   {
@@ -47,22 +47,27 @@ const kingdomExpressions = [
     body: (
       <p className="px-5 text-justify text-gray ">
         I have written free and paid books that you can use to transform your
-        spirituality and relationship. Check the Store Section for some of my
-        books. I also speak at churches, confernces, seminars, workshops,
-        virtual events and so much more. You can book me for your event here.
+        spirituality and relationship. Check the{" "}
+        <a className="text-secondary" href="https://selar.co/m/damilolaadeniji">
+          Store
+        </a>{" "}
+        Section for some of my books. I also speak at churches, confernces,
+        seminars, workshops, virtual events and so much more. You can book me
+        for your event{" "}
+        <a href="https://wa.me/2348165716353/?text=Hello">here</a>.
       </p>
     ),
-    icon: <FaPeopleArrows className="text-primary text-5xl" />,
+    icon: <FaMicrophone className="text-primary text-5xl" />,
   },
 ];
 const KingdomExpressions = () => {
   return (
     <div className="my-10 bg-slate-100 py-10 px-2">
-      <div className="container mx-auto">
-        <h1 className="text-2xl capitalize md:text-4xl  font-bold tracking-wide leading-snug text-lightgray">
+      <div className="container text-center space-y-3 mx-auto">
+        <h1 className="text-2xl capitalize md:text-4xl   font-bold tracking-wide leading-snug text-lightgray">
           <span className="text-primary">My</span> kingdom expressions
         </h1>
-        <p className="text-gray">
+        <p className="text-gray text-xl ">
           As a multi-potentialite, who is radiating the glory of Abba, I wear
           many hats and I deliver top-notch value in all my endeavours and
           commitments.

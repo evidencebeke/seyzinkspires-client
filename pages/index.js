@@ -3,6 +3,7 @@ import { ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import { getBooks } from "../apiFunctions/books";
+import Navigation from "../components/commons/Navigation";
 import About from "../components/home/About";
 import Books from "../components/home/Books";
 
@@ -31,6 +32,7 @@ export default function Home({ books }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Head>
+      <Navigation />
       <Header />
       <Quote />
       <About />

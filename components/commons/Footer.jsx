@@ -77,22 +77,17 @@ const Footer = () => {
         <SocialIcon
           fgColor="white"
           bgColor="#ffb84d"
-          url="https://api.whatsapp.com/send?phone=+2348165716353text=Hello"
+          url="https://www.facebook.com/Seyz01/"
         />
-        <SocialIcon
-          fgColor="white"
-          bgColor="#ffb84d"
-          url="https://facebook.com/evidencebeke"
-        />
-        <SocialIcon
+        {/* <SocialIcon
           fgColor="white"
           bgColor="#ffb84d"
           url="https://twitter.com/evidencebeke"
-        />
+        /> */}
         <SocialIcon
           fgColor="white"
           bgColor="#ffb84d"
-          url="https://linkedin.com/evidencebeke"
+          url="https://ng.linkedin.com/in/damilola-adeniji"
         />
       </div>
       <div className=" text-center md:text-left container my-5 mx-auto px-5">

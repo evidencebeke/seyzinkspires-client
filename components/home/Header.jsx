@@ -9,7 +9,7 @@ const list = [
 ];
 const Header = () => {
   return (
-    <section className=" py-6 bg-[url(https://images.unsplash.com/photo-1520671486401-ba5f2ab2213c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)] min-h-screen">
+    <section className=" py-6 bg-[url(https://images.unsplash.com/photo-1520671486401-ba5f2ab2213c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)] bg-cover">
       <div className="container  p-6 mx-auto flex-col px-10 md:flex-row justify-center  flex  items-center ">
         <div className=" space-y-6  md:w-1/2 text-center md:text-left ">
           <h1 className="text-lightgray text-3xl md:text-5xl font-bold tracking-wider leading-snug">
@@ -22,20 +22,25 @@ const Header = () => {
             optio dolor eum ab at. Nulla voluptates iusto veritatis, dolor
             deleniti quasi eius?
           </p>
-          <PrimaryButton>Get in touch</PrimaryButton>
+
+          <div className="my-3">
+            <a href="https://wa.me/2348165716353/?text=Hi!">
+              <PrimaryButton>Get in touch</PrimaryButton>
+            </a>
+          </div>
         </div>
         <div className="md:w-1/2 flex my-10 justify-center ">
           <Image className="w-full object-cover" src={hero} alt="Hero img" />
         </div>
       </div>
       <div className="container mx-auto">
-        <div className="flex items-center flex-col md:flex-row py-7 border-none w-10/12 rounded-2xl shadow-2xl   mx-auto md:justify-around justify-center space-x-5 ">
+        <div className="flex items-center space-y-3 flex-col md:flex-row py-7 border-none w-10/12 rounded-2xl shadow-2xl   mx-auto md:justify-around justify-center space-x-5 ">
           {list.map((item, i) => (
             <div
               key={i}
-              className="flex space-y-4 flex-col justify-center items-center"
+              className="flex space-y-4  flex-col justify-center items-center"
             >
-              <p className="text-4xl text-primary text-center font-semibold">
+              <p className="text-5xl text-primary text-center font-semibold">
                 {item.value}
               </p>
               <p className="text-center font-semibold text-gray text-lg">

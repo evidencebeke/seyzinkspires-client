@@ -26,10 +26,10 @@ const Card = ({ book }) => {
             <span>N{book.Price}</span>
           </div>
           <div>
-            <Link href="/">
+            <a href="https://selar.co/m/damilolaadeniji">
               {" "}
               <ArrowLongRightIcon className="w-[30px] text-secondary" />{" "}
-            </Link>
+            </a>
           </div>
         </div>
       </div>

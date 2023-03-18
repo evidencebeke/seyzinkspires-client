@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import Footer from "../components/commons/Footer";
-import Navigation from "../components/commons/Navigation";
 
 import "../styles/globals.css";
 
@@ -9,7 +8,6 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div>
-      <Navigation />
       <div>
         <Component {...pageProps} /> <Footer />
       </div>

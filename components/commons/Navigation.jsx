@@ -84,7 +84,7 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="#about">
+            <Link className="py-7 px-3 inline-block" href="/#about">
               About
             </Link>{" "}
           </li>
@@ -110,7 +110,9 @@ const Navigation = () => {
           </li>
         </ul>
         <div className="md:block hidden">
-          <PrimaryButton>Get in touch</PrimaryButton>
+          <a href="https://wa.me/2348165716353/?text=Hello">
+            <PrimaryButton>Get in touch</PrimaryButton>
+          </a>
         </div>
         {/* mobile nav */}
         <ul
@@ -128,7 +130,7 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="#about">
+            <Link className="py-7 px-3 inline-block" href="/#about">
               About
             </Link>{" "}
           </li>
@@ -154,7 +156,10 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li className="self-center">
-            <PrimaryButton>Get in touch</PrimaryButton>
+            <a href="https://wa.me/2348165716353/?text=Hello">
+              {" "}
+              <PrimaryButton>Get in touch</PrimaryButton>
+            </a>
           </li>
         </ul>
       </div>

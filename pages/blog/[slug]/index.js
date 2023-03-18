@@ -6,6 +6,7 @@ import React from "react";
 import { getPost, getPosts } from "../../../apiFunctions/blog";
 import { formatDistance } from "date-fns";
 import { useRouter } from "next/router";
+import Navigation from "../../../components/commons/Navigation";
 
 const Article = ({ post, otherPosts }) => {
   const router = useRouter();
@@ -32,6 +33,7 @@ const Article = ({ post, otherPosts }) => {
           content={`${article.Title ? article.Title : ""}`}
         />
       </Head>
+      <Navigation />
       <div className="space-y-10 my-10">
         <div className="text-center">
           <h1 className="text-2xl md:4xl mx-5 md:mx-[20%] font-bold mb-5">

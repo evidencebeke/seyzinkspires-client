@@ -14,10 +14,10 @@ const About = () => {
           />
         </div>
         <div className="md:w-1/2 w-full mt-7 mx-5">
-          <h1 className="text-2xl capitalize md:text-4xl  font-bold tracking-wider leading-snug text-lightgray">
+          <h1 className="text-2xl capitalize md:text-4xl text-center md:text-left  font-bold tracking-wider leading-snug text-lightgray">
             About <span className="text-primary">me</span>
           </h1>
-          <div className=" text-gray text-lg font-semibold my-3">
+          <div className=" text-gray text-lg text-justify leading-loose font-semibold my-3">
             <p className="">
               Damilola Adeniji fondly called Seyz, is a Christian and
               multi-potentialite.

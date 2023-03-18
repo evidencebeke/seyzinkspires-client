@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { getPosts } from "../apiFunctions/blog";
 import Blog from "../components/blog/Blog";
+import Navigation from "../components/commons/Navigation";
 
 // import Seo from "../components/commons/Seo";
 
@@ -18,6 +19,7 @@ const BlogPage = ({ posts }) => {
       </Head>
 
       <div>
+        <Navigation />
         <Blog posts={posts} />
       </div>
     </>

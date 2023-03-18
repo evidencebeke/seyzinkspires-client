@@ -6,7 +6,7 @@ const Books = ({ books }) => {
     <section id="store" className="px-2 my-10">
       <div className="container  mx-auto">
         <div>
-          <h1 className="font-bold text-2xl md:text-4xl capitalize">
+          <h1 className="font-bold text-2xl text-center md:text-4xl capitalize">
             My latest books
           </h1>
         </div>
