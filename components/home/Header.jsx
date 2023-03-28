@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import hero from "../../assets/dark1.png";
+import hero from "../../assets/seyz3.jpg";
 import PrimaryButton from "../commons/ui/PrimaryButton";
 const list = [
   { data: "Students", value: "10k+" },
