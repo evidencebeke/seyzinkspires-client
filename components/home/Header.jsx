@@ -16,7 +16,7 @@ const Header = () => {
             <span className="text-primary">Learn</span> How to Build and Attract
             a Healthy Relationship
           </h1>
-          <p className="font-semibold md:w-[70%] text-gray">
+          <p className=" tracking-wider md:w-[70%] text-gray">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque sed
             itaque possimus cum facilis repellat ut corporis iste, illo quos
             optio dolor eum ab at. Nulla voluptates iusto veritatis, dolor

@@ -5,9 +5,9 @@ const kingdomExpressions = [
   {
     topic: "Relationship Counselling/Coaching",
     body: (
-      <p className="px-5 text-justify text-gray">
+      <p className="px-5 text-left leading-loose tracking-wide text-gray">
         I am a Certified Counselor & Relationship Minister, who has been sent to
-        the heartbroken and individuals wih a shattered past to bring healing
+        the heartbroken and individuals with a shattered past to bring healing
         and a revival of the presence of God and true love in relationships
         today. My mandate is to help people (singles and teenagers especially)
         break free from toxic relationships, heal from past traumas, become
@@ -16,12 +16,12 @@ const kingdomExpressions = [
         relationships? <br /> Hit me up for a private session
       </p>
     ),
-    icon: <FaPeopleArrows className="text-primary text-5xl" />,
+    icon: <FaPeopleArrows className="text-primary text-4xl" />,
   },
   {
     topic: "Writing Services",
     body: (
-      <p className="px-5 text-justify text-gray">
+      <p className="px-5 text-left leading-loose tracking-wide text-gray">
         As a phenomenal writer with over 3 years of experience, I weave words in
         the most beautiful ways you can imagine. I have been privileged to write
         for brands and companies, to increase sales, tell their brand story, or
@@ -32,7 +32,7 @@ const kingdomExpressions = [
         <br />
         (a) Content Writing <br />
         (b) Brand Storytelling <br />
-        (c) Copywriting
+        (c) Copywritingleading-loose tracking-wide
         <br />
         (d) Professional Editing <br />
         (e) CV Writing <br />
@@ -40,24 +40,33 @@ const kingdomExpressions = [
         (g) Virtual Assistant Services <br />
       </p>
     ),
-    icon: <FaPenAlt className="text-primary text-5xl" />,
+    icon: <FaPenAlt className="text-primary text-4xl" />,
   },
   {
     topic: "Author/Speaker",
     body: (
-      <p className="px-5 text-justify text-gray ">
+      <p className="px-5 text-left leading-loose tracking-wide text-gray ">
         I have written free and paid books that you can use to transform your
         spirituality and relationship. Check the{" "}
-        <a className="text-secondary" href="https://selar.co/m/damilolaadeniji">
+        <a
+          className="text-secondary font-bold"
+          href="https://selar.co/m/damilolaadeniji"
+        >
           Store
         </a>{" "}
-        Section for some of my books. I also speak at churches, confernces,
-        seminars, workshops, virtual events and so much more. You can book me
-        for your event{" "}
-        <a href="https://wa.me/2348165716353/?text=Hello">here</a>.
+        for some of my books. I also speak at churches, confernces, seminars,
+        workshops, virtual events and so much more. You can book me for your
+        event{" "}
+        <a
+          className="text-secondary font-bold"
+          href="https://wa.me/2348165716353/?text=Hello"
+        >
+          here
+        </a>
+        .
       </p>
     ),
-    icon: <FaMicrophone className="text-primary text-5xl" />,
+    icon: <FaMicrophone className="text-primary text-4xl" />,
   },
 ];
 const KingdomExpressions = () => {
@@ -67,12 +76,12 @@ const KingdomExpressions = () => {
         <h1 className="text-2xl capitalize md:text-4xl   font-bold tracking-wide leading-snug text-lightgray">
           <span className="text-primary">My</span> kingdom expressions
         </h1>
-        <p className="text-gray text-xl ">
+        <p className="text-gray text-lg ">
           As a multi-potentialite, who is radiating the glory of Abba, I wear
           many hats and I deliver top-notch value in all my endeavours and
           commitments.
         </p>
-        <div className=" grid grid-cols-1 gap-10 my-5 md:grid-cols-3">
+        <div className=" grid grid-cols-1 gap-3 my-5 md:grid-cols-3">
           {kingdomExpressions.map((expression, i) => (
             <KingdomExpression
               key={i}

@@ -12,7 +12,7 @@ const TestimonialCard = ({ image, name, desc, text }) => {
         width={240}
         height={300}
       />
-      <p className="text-gray-300">{text}</p>
+      <p className="text-gray-300 tracking-wide leading-loose">{text}</p>
       <div>
         <div className="text-secondary">{name}</div>
         <div className="text-slate-500">{desc}</div>

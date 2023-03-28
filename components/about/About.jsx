@@ -19,7 +19,7 @@ const About = () => {
           src={profilePic}
           className="w-4/6 md:w-[600px] object-contain"
         />
-        <div className="space-y-5 my-10 font-medium mx-10">
+        <div className="space-y-5 tracking-wide leading-loose text-gray my-10 font-medium mx-5 md:mx-[10%]">
           <p>
             Damilola Adeniji, fondly called Seyz, is a christian and
             multi-potentialite.
@@ -30,11 +30,17 @@ const About = () => {
             provided.
           </p>
           <p>
-            As an award-winning and certified Relationship Counselor, she is
-            passionate about helping people (singles especially) break free from
-            toxic and undefined relationships. She achieves this through her
-            brand Relationship Affairs with Seyz (RAYZ), private counselling
-            sessions, invites, speaking engagements and writing.
+            As an award-winning and certified relationship coach, she is
+            passionate about helping people (singles and teenagers especially),
+            break free from wrong relationships, heal from past trauma, become
+            whole, and experience true (God-kind) love.
+          </p>
+          <p>
+            {" "}
+            She achieves this through written resources (books and social media
+            content), audio and visuals, speaking engagements, RAYZ communities,
+            one-on-one coaching/therapy sessions, school outreach, and physical
+            events.
           </p>
           <p>
             {` Seyz (the awakened woman) is the Lead Visioneer of OYBC - Open Your
