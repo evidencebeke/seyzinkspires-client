@@ -1,17 +1,53 @@
 import React, { useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import PrimaryButton from "./ui/PrimaryButton";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import Loader from "../ui/Loader";
 
 const Footer = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const emailJsService = process.env.SERVICE;
+  const emailJsTemplate = process.env.TEMPLATE;
+  const emailJsKey = process.env.KEY;
 
   const submitForm = (e) => {
     e.preventDefault();
-    console.log({ name, email, subject, message });
+    setLoading(true);
+
+    emailjs
+      .send(
+        emailJsService,
+        emailJsTemplate,
+        {
+          subject,
+          name,
+          message,
+          email,
+        },
+        emailJsKey
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          toast.success("Your message was sent successfully");
+          setName("");
+          setMessage("");
+          setEmail("");
+          setSubject("");
+        },
+        (error) => {
+          setLoading(false);
+          toast.error("Send failed. Check your connection");
+        }
+      );
   };
+  console.log({ emailJsService, emailJsTemplate, emailJsKey });
   return (
     <footer id="contact" className="bg-slate-900 py-10 text-zinc-200 ">
       <div className="container px-5 p-10 grid grid-cols-1 gap-10 md:grid-cols-2 mx-auto">
@@ -70,7 +106,10 @@ const Footer = () => {
               rows="2"
             ></textarea>
           </div>
-          <PrimaryButton onClick={submitForm}>Submit</PrimaryButton>
+          <PrimaryButton onClick={submitForm}>
+            {" "}
+            {loading ? <Loader /> : "Submit"}
+          </PrimaryButton>
         </form>
       </div>
       <div className="flex space-x-4 justify-center">

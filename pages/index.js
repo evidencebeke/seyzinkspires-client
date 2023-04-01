@@ -39,6 +39,7 @@ export default function Home({ books }) {
       <KingdomExpressions />
       <Books books={books} />
       <Testimonials />
+      <ToastContainer hideProgressBar />
     </>
   );
 }
