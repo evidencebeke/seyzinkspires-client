@@ -89,7 +89,10 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <a className="py-7 px-3 inline-block" href="https://selar.co/m/damilolaadeniji">
+            <a
+              className="py-7 px-3 inline-block"
+              href="https://selar.co/m/damilolaadeniji"
+            >
               Store
             </a>{" "}
           </li>
@@ -117,7 +120,7 @@ const Navigation = () => {
         {/* mobile nav */}
         <ul
           className={`
-          md:hidden flex flex-col bg-white z-40  fixed w-full top-0 scrollbar-none overflow-y-auto bottom-0 py-14 pl-4
+          md:hidden flex flex-col bg-white/90 z-40  fixed w-full top-0 scrollbar-none overflow-y-auto bottom-0 py-14 pl-4
           duration-500 ${open ? "left-0" : "left-[-100%]"}
           `}
         >
@@ -135,7 +138,10 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <a className="py-7 px-3 inline-block" href="https://selar.co/m/damilolaadeniji">
+            <a
+              className="py-7 px-3 inline-block"
+              href="https://selar.co/m/damilolaadeniji"
+            >
               Store
             </a>{" "}
           </li>
