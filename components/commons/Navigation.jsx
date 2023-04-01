@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import React, { useState } from "react";
 import logo from "../../assets/logo2.png";
 import PrimaryButton from "./ui/PrimaryButton";
@@ -97,9 +98,16 @@ const Navigation = () => {
             </a>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="#testimonials">
+            <ScrollLink
+              activeClass="active"
+              to="testimonials"
+              spy={true}
+              offset={-70}
+              duration={500}
+              className="py-7 px-3 inline-block"
+            >
               Testimonials
-            </Link>{" "}
+            </ScrollLink>{" "}
           </li>
           <li>
             <Link className="py-7 px-3 inline-block" href="/blog">
@@ -107,9 +115,16 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="#contact">
+            <ScrollLink
+              activeClass="active"
+              to="contact"
+              spy={true}
+              offset={-70}
+              duration={500}
+              className="py-7 px-3 inline-block"
+            >
               Contact
-            </Link>{" "}
+            </ScrollLink>{" "}
           </li>
         </ul>
         <div className="md:block hidden">
@@ -146,9 +161,16 @@ const Navigation = () => {
             </a>{" "}
           </li>
           <li>
-            <Link className="py-7 px-3 inline-block" href="#testimonials">
+            <ScrollLink
+              activeClass="active"
+              to="testimonials"
+              spy={true}
+              offset={-70}
+              duration={500}
+              className="py-7 px-3 inline-block"
+            >
               Testimonials
-            </Link>{" "}
+            </ScrollLink>{" "}
           </li>
 
           <li>
@@ -157,9 +179,16 @@ const Navigation = () => {
             </Link>{" "}
           </li>
           <li>
-            <Link className="py-7  px-3 inline-block" href="#contact">
+            <ScrollLink
+              activeClass="active"
+              to="contact"
+              spy={true}
+              offset={-70}
+              duration={500}
+              className="py-7 px-3 inline-block"
+            >
               Contact
-            </Link>{" "}
+            </ScrollLink>{" "}
           </li>
           <li className="self-center">
             <a href="https://wa.me/2348165716353/?text=Hello">

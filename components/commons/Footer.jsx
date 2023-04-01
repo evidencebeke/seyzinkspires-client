@@ -90,7 +90,7 @@ const Footer = () => {
           url="https://ng.linkedin.com/in/damilola-adeniji"
         />
 
-<SocialIcon
+        <SocialIcon
           fgColor="white"
           bgColor="#ffb84d"
           url="https://www.instagram.com/seyz_inkspires/"

@@ -15,6 +15,11 @@
 body {
   overflow-x: hidden;
 }
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 @layer components {
   input,
   textarea {
