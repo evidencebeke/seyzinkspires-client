@@ -54,7 +54,7 @@ const kingdomExpressions = [
         >
           Store
         </a>{" "}
-        for some of my books. I also speak at churches, confernces, seminars,
+        for some of my books. I also speak at churches, conferences, seminars,
         workshops, virtual events and so much more. You can book me for your
         event{" "}
         <a
